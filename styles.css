@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #240b36, #c31432); 
+}
+
+
+.container h1 {
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+}
+
+#taskinput {
+    width: 25%;
+    height: 45px;
+    font-size: bold;
+    text-align: left;
+    text-indent: 15px;
+    border: 1px solid;
+    border-radius: 30px;
+    position: absolute;
+    top: 25%;
+    left: 37.8%;
+}
+
+#mybutton {
+    background: linear-gradient(to right, #00f260, #0575e6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fffefe; 
+    font-size: bold;
+    padding: 7px 47px; 
+    border-radius: 50px; 
+    border: none; 
+    cursor: pointer; 
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    left: 55%;
+    top: 25.8%;
+    transition: transform 0.3s ease;
+    border: 1px solid black; /* Dodajte crni okvir oko dugmeta */
+}
+
+#mybutton:hover {
+    transform: scale(1.1);
+}
+
+
+/* Stil za listu zadataka */
+#taskList {
+    max-width: 1000px;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    position: absolute;
+    left: 39%;
+    top: 35%;
+}
+
+/* Stil za svaki zadatak */
+#taskList li {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+    display: flex; 
+    justify-content: space-between; /* Da biste postigli proporcionalan raspored */
+    align-items: center; 
+    padding: 10px;
+    position: sticky; 
+    left: 39%; 
+}
+
+
+#taskList li input[type="checkbox"] {
+    margin-right: 10px; 
+}
+
+
+.delete-icon {
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    transform-origin: center;
+    margin-left: 10px; 
+}
+
+
+.delete-icon:hover {
+    transform: scale(1.2);
+}
+
+#filterOptions {
+    background: linear-gradient(to right, #00f260, #0575e6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #000000; 
+    padding: 7px 10px; 
+    border-radius: 50px; 
+    border: none; 
+    cursor: pointer; 
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    left: 64%;
+    top: 25.8%;
+    transition: transform 0.3s ease;
+    text-align: center; 
+    border: 1px solid black;
+}
+
+
+#filterOptions option {
+    text-align: center; 
+    background-color: #000000; 
+    color: #fff; 
+    padding: 5px; 
+    font-family: 'Poppins', sans-serif;
+}
